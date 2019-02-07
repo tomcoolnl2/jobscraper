@@ -1,18 +1,11 @@
 {
-  "name": "jobby",
+  "name": "jobscraper",
   "version": "1.0.0",
   "description": "A job listing web app using Indreed",
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js"
   },
-  "keywords": [
-    "job",
-    "indeed",
-    "indreed"
-  ],
-  "author": "Oyetoke Toby",
-  "license": "MIT",
   "dependencies": {
     "axios": "^0.18.0",
     "express": "^4.16.3",

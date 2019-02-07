@@ -4,23 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Jobby - Job Web App</title>
+    <title>Jobs - {{ title }}</title>
     <link rel="stylesheet" href="/css/material.css">
     <link rel="stylesheet" href="https://rawgit.com/MEYVN-digital/mdl-selectfield/master/mdl-selectfield.min.css">
     <link rel="stylesheet" href="/css/style.css">
-
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <style>
-        #view-source {
-            position: fixed;
-            display: block;
-            right: 0;
-            bottom: 0;
-            margin-right: 40px;
-            margin-bottom: 40px;
-            z-index: 900;
-        }
-    </style>
 </head>
 <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base index">
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -40,30 +28,29 @@
                     <label class="mdl-textfield__label" for="query">What</label>
                 </div>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input query-input" type="text" id="query" name="l">
+                    <input class="mdl-textfield__input query-input" type="text" id="query" name="l" value="Amsterdam">
                     <label class="mdl-textfield__label" for="query">Where</label>
                 </div>
                 <button type="submit" class="mdl-button query-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
                     Find Jobs
                 </button>
-            <button id="show-dialog" type="button" class="mdl-button">Advanced Search</button>
-
+                <button id="show-dialog" type="button" class="mdl-button">Advanced Search</button>
             </form>
         </div>
         <footer class="mdl-mini-footer">
             <div class="mdl-mini-footer__left-section">
-                <div class="mdl-logo">Jobby | Built with <img src="/images/icon-heart.svg"> by <a href="http://twitter.com/@OyetokeT">Oyetoke Toby</a></div>
+                
             </div>
             <div class="mdl-mini-footer__right-section">
                 <ul class="mdl-mini-footer__link-list">
                     <li>
-                        <a href="#">Facebook</a>
+                        {{!-- <a href="#">Facebook</a> --}}
                     </li>
                     <li>
-                        <a href="#">Twitter</a>
+                        {{!-- <a href="#">Twitter</a> --}}
                     </li>
                     <li>
-                        <a href="#">Medium</a>
+                        {{!-- <a href="#">Medium</a> --}}
                     </li>
                 </ul>
             </div>

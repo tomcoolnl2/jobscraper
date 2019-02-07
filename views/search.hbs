@@ -1,26 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Jobby - Job Web App</title>
+    <title>Jobs - {{ title }}</title>
     <link rel="stylesheet" href="/css/material.css">
     <link rel="stylesheet" href="https://rawgit.com/MEYVN-digital/mdl-selectfield/master/mdl-selectfield.min.css">
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <style>
-        #view-source {
-            position: fixed;
-            display: block;
-            right: 0;
-            bottom: 0;
-            margin-right: 40px;
-            margin-bottom: 40px;
-            z-index: 900;
-        }
-    </style>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
@@ -30,7 +18,7 @@
             <div class="mdl-layout__header-row portfolio-logo-row">
                 <span class="mdl-layout__title">
                     <div class="portfolio-logo"></div>
-                    <span class="mdl-layout__title">{{ title }} ({{ countryCode }})</span>
+                    <span class="mdl-layout__title">{{ title }}</span>
                 </span>
                 
             </div>
@@ -44,7 +32,7 @@
                         <label class="mdl-textfield__label" for="query">What</label>
                     </div>
                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                        <input class="mdl-textfield__input query-input" type="text" id="query" name="l">
+                        <input class="mdl-textfield__input query-input" type="text" id="query" name="l" value="Amsterdam">
                         <label class="mdl-textfield__label" for="query">Where</label>
                     </div>
                     <button type="submit" class="mdl-button query-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
@@ -74,18 +62,14 @@
             
             <footer class="mdl-mini-footer">
                 <div class="mdl-mini-footer__left-section">
-                    <div class="mdl-logo">Jobby | Built with
-                        <img src="/images/icon-heart.svg"> by
-                        <a href="http://twitter.com/@OyetokeT">Oyetoke Toby</a>
-                    </div>
                 </div>
                 <div class="mdl-mini-footer__right-section">
                     <ul class="mdl-mini-footer__link-list">
                         <li>
-                            <a href="#">Help</a>
+                            {{!-- <a href="#">Help</a> --}}
                         </li>
                         <li>
-                            <a href="#">Privacy & Terms</a>
+                            {{!-- <a href="#">Privacy & Terms</a> --}}
                         </li>
                     </ul>
                 </div>

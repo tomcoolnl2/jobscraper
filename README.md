@@ -1,15 +1,7 @@
-# Jobby
+# TODO
 
-A Job Listing Web App. http://jobbyio.herokuapp.com
-
-# Installation and Usage
-```
-git clone http://github.com/CITGuru/Jobby.git
-cd Jobby
-npm install
-npm start
-```
-
-# Author
-
-Oyetoke Toby
+- [ ] Docker
+- [ ] Heroku
+- [ ] Split templates with Handlebars
+- [ ] All content in one JSON file
+- [ ] Add google translator for ENG <-> CHN content file
