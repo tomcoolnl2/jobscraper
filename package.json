@@ -11,6 +11,7 @@
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
     "express-ip": "^1.0.1",
-    "geoip-lite": "^1.2.2"
+    "geoip-lite": "^1.2.2",
+    "nodemon": "^1.18.10"
   }
 }
